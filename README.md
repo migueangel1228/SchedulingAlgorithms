@@ -1,6 +1,6 @@
 # CPU Scheduler
 
-Simulador de planificacion de CPU en C++17 con los algoritmos:
+Simulador de planificacion de CPU con los algoritmos:
 
 - FCFS
 - SJF
@@ -11,16 +11,16 @@ El programa lee procesos desde un archivo de texto, ejecuta cada algoritmo y mue
 
 ## Compilacion
 
-Compila el programa con `g++`:
+Compila con tu compilador de C++ preferido (g++, clang++ o MSVC). Ejemplo con `g++`:
 
 ```bash
-g++ -std=c++17 scheduler.cpp -o scheduler
+g++ scheduler.cpp -o scheduler
 ```
 
-En Windows con MinGW:
+En Windows (MinGW):
 
 ```powershell
-g++ -std=c++17 scheduler.cpp -o scheduler.exe
+g++ scheduler.cpp -o scheduler.exe
 ```
 
 ## Ejecucion
@@ -28,16 +28,15 @@ g++ -std=c++17 scheduler.cpp -o scheduler.exe
 Uso general:
 
 ```bash
-./scheduler <input_file> [--verbose|-v] [-q N|--quantum N]
+./scheduler <input_file> [-q N|--quantum N]
 ```
 
 Ejemplos:
 
 ```bash
 ./scheduler input_example1.txt
-./scheduler input_example2.txt --verbose
 ./scheduler -q 4 input_example3.txt
-./scheduler --quantum 2 input_example1.txt -v
+./scheduler --quantum 2 input_example1.txt
 ./scheduler --help
 ```
 
@@ -46,7 +45,6 @@ En Windows:
 ```powershell
 .\scheduler.exe input_example1.txt
 .\scheduler.exe -q 4 input_example2.txt
-.\scheduler.exe input_example3.txt --verbose
 ```
 
 ## Formato de entrada
