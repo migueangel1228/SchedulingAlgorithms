@@ -1,0 +1,6 @@
+# input_example3.txt
+# mezcla con prioridades y queues
+P1; 3; 0; 2; 2
+P2; 10; 1; 1; 5
+P3; 2; 2; 1; 4
+P4; 6; 3; 2; 1
